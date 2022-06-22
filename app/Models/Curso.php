@@ -12,6 +12,7 @@ class Curso extends Model
     /* protected $fillable = ['name', 'descripcion', 'categoria']; */
     protected $guarded = []; //colocar los campos protegidos e ignorar los campos permitidos.
 
+    // /* Parte para el slug "URL'S amigables" añadida desde la clase Model de la que extiende este modelo Curso */
     public function getRouteKeyName()
     {
         return "slug";
